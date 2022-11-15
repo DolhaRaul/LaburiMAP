@@ -1,5 +1,6 @@
 package service;
 
+import domain.Prietenie;
 import domain.User;
 import domain.validators.EntityIsNull;
 import domain.validators.EntityNotFound;
@@ -59,5 +60,24 @@ public class ServiceUsers
     public Iterable<User> findAll()
     {
         return this.users_repo.findAll();
+    }
+
+    /**
+     * Obtinem cu cati utilizatorii este reteaua noastra populata pana acm
+     * @return numarul de users de pana acm
+     */
+
+    /**
+     * Obtinem detaliile despre un anumit utilizator de ID dorit
+     * @param id-Integer
+     * @return Un utilizator de un anumit id
+     */
+    public User findOne(int id)
+    {
+        return this.users_repo.findOne(id);
+    }
+    public int size()
+    {
+        return this.users_repo.size();
     }
 }

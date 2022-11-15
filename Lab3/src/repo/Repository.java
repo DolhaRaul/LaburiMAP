@@ -28,4 +28,10 @@ public interface Repository<ID, E>
      * @return toate elementele colectiei
      */
     Iterable<E> findAll();
+
+    /**
+     * obtinem cate entitati are repo ul pana in momentul de fata
+     * @return numarul de entitati
+     */
+    int size();
 }

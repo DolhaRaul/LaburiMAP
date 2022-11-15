@@ -10,6 +10,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.List;
+import java.util.Map;
 
 public class PrietenieFileRepository extends AbstractRepo<Integer, Prietenie>
 {
@@ -26,6 +27,30 @@ public class PrietenieFileRepository extends AbstractRepo<Integer, Prietenie>
         load();
     }
 
+    /**
+     * Aduagam o prietenie dorita de utilizator, cu conditia ca ID ul ei sa fie unic si acea sa nu fie o relatie de
+     * prietenie deja existenta(se formeaza intre utilizatori diferiti)
+     * @param relatie-Prietenie
+     * @return prietenia adaugata
+     * @throws IllegalArgumentException-nu e cazul
+     * @throws ValidatorException-in cazul in care prietenia de adaugat nu e corecta ca si format
+     * @throws EntityIsNull-in cazul in care prietenia nu e vida(nu are parametrii completati)
+     */
+    @Override
+    public Prietenie save(Prietenie relatie) throws IllegalArgumentException, ValidatorException, EntityIsNull
+    {
+//        for(Prietenie enntity: this.findAll())
+//        {
+//            if(relatie.equals(enntity))
+//                return relatie;
+//        }
+        for(Map.Entry<Integer, Prietenie> entry: items.entrySet())
+        {
+            if(relatie.equals(entry.getValue()))
+                return relatie;///exista deja prietenia pe care vrem sa o adaugam
+        }
+        return super.save(relatie);
+    }
     /**
      * incarcam toate datele datele din fisierul "filename" in colectiile noastre
      * @throws ValidatorException-aruncam exceptie cand fisierul "este corupt"(nu putem extrage datele corespunzator)

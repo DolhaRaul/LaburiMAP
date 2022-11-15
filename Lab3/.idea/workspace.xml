@@ -1,7 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b7facb36-79ca-4eff-a180-ba9547383221" name="Changes" comment="" />
+    <list default="true" id="b7facb36-79ca-4eff-a180-ba9547383221" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domain/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/Entity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domain/HasID.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/HasID.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domain/Prietenie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/Prietenie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domain/validators/PrietenieValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/validators/PrietenieValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domain/validators/UserValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/validators/UserValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domain/validators/Validator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/validators/Validator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/repo/AbstractRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/repo/AbstractRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/repo/PrietenieFileRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/repo/PrietenieFileRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/repo/Repository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/repo/Repository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/Config.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/run/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/run/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/run/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/run/TestRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/ServicePrietenii.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/ServicePrietenii.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/ServiceUsers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/ServiceUsers.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -27,15 +43,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="run.Main" />
@@ -58,7 +74,9 @@
       <workItem from="1668211270827" duration="142000" />
       <workItem from="1668423789685" duration="1514000" />
       <workItem from="1668445005642" duration="9524000" />
-      <workItem from="1668456274539" duration="31000" />
+      <workItem from="1668456274539" duration="1423000" />
+      <workItem from="1668519119940" duration="618000" />
+      <workItem from="1668528510966" duration="4305000" />
     </task>
     <servers />
   </component>
@@ -76,7 +94,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="master" />
+                        <option value="origin/main" />
                       </list>
                     </value>
                   </entry>
@@ -87,5 +105,25 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/run/TestRunner.java</url>
+          <line>60</line>
+          <properties class="run.TestRunner" method="test_service_prietenii">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

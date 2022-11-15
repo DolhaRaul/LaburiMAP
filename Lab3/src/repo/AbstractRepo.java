@@ -9,17 +9,31 @@ import domain.validators.ValidatorException;
 
 import java.util.HashMap;
 
-public class AbstractRepo<ID, E extends Entity<ID>> implements Repository<ID, E>
+public abstract class AbstractRepo<ID, E extends Entity<ID>> implements Repository<ID, E>
 {
-    private Map<ID, E> items;///elementele repo ului
+    protected Map<ID, E> items;///elementele repo ului
 
-    private Validator<E> validator;///un validator care valideaza elementele de tip E
+    protected Validator<E> validator;///un validator care valideaza elementele de tip E
 
+    /**
+     * constructor cu parametrii pentru clasa AbstarctRepository(desi nu il vom apela niciodata cu exceptia claselor
+     * derivate, fiindca clasa aceasta este asbtracta)
+     * @param validator-Validator<E>
+     */
     public AbstractRepo(Validator<E> validator)
     {
         this.items = new HashMap<>();
         this.validator = validator;
     }
+
+    /**
+     * salvam si returnam entitatea
+     * @param entity-E
+     * @return entitatea de adaugat
+     * @throws IllegalArgumentException-nu e folosita
+     * @throws ValidatorException-im cazul in care entitatea de salvat nu e in format corect
+     * @throws EntityIsNull-entitatea e nula(nu are datele membre initializate cu ceva)
+     */
     @Override
     public E save(E entity) throws IllegalArgumentException, ValidatorException, EntityIsNull {
         /*
@@ -38,6 +52,13 @@ public class AbstractRepo<ID, E extends Entity<ID>> implements Repository<ID, E>
             items.put(entity.getID(), entity);
             return entity;
     }
+
+    /**
+     * stergem o entitate de un Id dorit
+     * @param id-ID
+     * @return entitatea pe care am sters o
+     * @throws EntityIsNull-in cazul in care ID ul introdus e vid
+     */
     @Override
     public E delete(ID id) throws EntityIsNull
     {
@@ -52,6 +73,11 @@ public class AbstractRepo<ID, E extends Entity<ID>> implements Repository<ID, E>
         return entity;
     }
 
+    /**
+     * Gasim o entitatea de un anumit ID, daca exista
+     * @param id-ID
+     * @return entitatea de un anumit ID sau null daca aceasta nu exista
+     */
     @Override
     public E findOne(ID id) {
         if(items.containsKey(id))
@@ -59,8 +85,22 @@ public class AbstractRepo<ID, E extends Entity<ID>> implements Repository<ID, E>
         return null;
     }
 
+    /**
+     * Elementele repo ului sub forma unei colectii
+     * @return toate elementele repo ului
+     */
     @Override
     public Iterable<E> findAll() {
         return items.values();
+    }
+
+    /**
+     * Metoda ne spune cate entitati avem pana in momentul curent
+     * @return numarul de entitati alre repo ului
+     */
+    @Override
+    public int size()
+    {
+        return this.items.size();
     }
 }

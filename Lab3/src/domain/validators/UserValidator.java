@@ -4,7 +4,11 @@ import domain.User;
 
 public class UserValidator implements Validator<User>
 {
-
+    /**
+     * verificam daca un user este valid sau nu
+     * @param entity-User
+     * @throws ValidatorException-validam un user(acesta sa fie in format corect)
+     */
     @Override
     public void validate(User entity) throws ValidatorException
     {

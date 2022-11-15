@@ -14,28 +14,28 @@ import java.io.IOException;
 
 public class Main {
     public static void main(String[] args) throws ValidatorException, IOException, EntityIsNull {
-//        Validator<User> validator = new UserValidator();
-//        InMemoryRepository<Integer, User> repo_users = new InMemoryRepository<>(validator);
-//        repo_users.save(user1);
-//        repo_users.save(user1);
-//        try {
+        try {
 //            System.out.println("Teste repo useri:");
 //            TestRunner.test_repo_users();
 //            System.out.println();
 //            System.out.println("Teste repo prietenii:");
 //            TestRunner.test_repo_friendships();
 //            System.out.println();
-//            System.out.println("Test service useri:");
-//            TestRunner.test_service_users();
-//            System.out.println();
-//            System.out.println("Teste service prietenii:");
-//            TestRunner.test_service_prietenii();
-//        }
-//        catch(Exception e)
-//        {
-//            System.err.println("Fisier corupt sau eroare la validare!");
-//            e.printStackTrace();
-//        }
+            System.out.println("Teste in memory repositories:");
+            TestRunner.test_in_memories_repos();
+            System.out.println("Tesetele pentru in memory repositories sunt bune!");
+            System.out.println("Test service useri:");
+            TestRunner.test_service_users();
+            System.out.println("Tesetele pentru service useri sunt bune!");
+            System.out.println("Teste service prietenii:");
+            TestRunner.test_service_prietenii();
+            System.out.println("Tesetele pentru service useri sunt bune!");
+        }
+        catch(Exception e)
+        {
+            System.err.println("Fisier corupt sau eroare la validare!");
+            e.printStackTrace();
+        }
         String usersFileName = Config.getProperties().getProperty("Users");
         String friendshipsFileName = Config.getProperties().getProperty("Prietenii");
         UserFileRepository users_repo = new UserFileRepository(new UserValidator(), usersFileName);

@@ -12,7 +12,13 @@ public class Config {
      */
     public static final String CONFIG_LOCATION = Config.class.getClassLoader().
             getResource("resources/config.properties").getFile();
-    public static Properties getProperties() {
+
+    /**
+     * Obtinem proprietatile generale
+     * @return Proprietatile clasei Config
+     */
+    public static Properties getProperties()
+    {
         Properties properties = new Properties();
         try {
             properties.load(new FileReader(CONFIG_LOCATION));

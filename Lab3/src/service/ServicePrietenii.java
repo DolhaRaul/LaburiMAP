@@ -8,6 +8,8 @@ import domain.validators.ValidatorException;
 import repo.PrietenieFileRepository;
 import repo.UserFileRepository;
 
+import java.util.HashMap;
+
 public class ServicePrietenii
 {
     UserFileRepository users_repo;
@@ -44,6 +46,14 @@ public class ServicePrietenii
         return friendship;
     }
 
+    /**
+     * Stergem si returnam o prietenie de un id dorit(daca aceasta exista)
+     * @param id-Integer
+     * @return Prietenia stearsa pentru un id introdus
+     * @throws EntityIsNull-ID ul prieteniei de sters este vid(nu a fost introdus)
+     * @throws EntityNotFound-Prietenia de sters nu a fost gasita
+     */
+
     public Prietenie delete_prietenie(int id) throws EntityIsNull, EntityNotFound {
         Prietenie friendship = this.prietenii_repo.delete(id);
         if(friendship == null)///prietenia de sters nu a fost gasita
@@ -58,5 +68,24 @@ public class ServicePrietenii
     public Iterable<Prietenie> findAll()
     {
         return this.prietenii_repo.findAll();
+    }
+
+    /**
+     * Obtinem detaliile unei prietenii de un anumit id
+     * @param id-Integer
+     * @return Prietenie de un anumit id
+     */
+    public Prietenie findOne(int id)
+    {
+        return this.prietenii_repo.findOne(id);
+    }
+
+    /**
+     * Obtinem cu cate relatii de prietenie este reteaua noastra populata pana acm
+     * @return numarul de relatii de prietenie existente in retea
+     */
+    public int size()
+    {
+        return this.prietenii_repo.size();
     }
 }
