@@ -32,7 +32,7 @@ public class ServiceUsers
      * @param prenume-String
      * @param oras-String
      * @return obiectul de tip User ce va fi construit(daca se poate) pe baza datelor primite
-     * @throws ValidatorException-Exception
+     * @throws ValidatorException -Exception
      */
     public User add_user(int id, String nume, String prenume, String oras) throws ValidatorException, EntityIsNull {
         User user = new User(id, nume, prenume, oras);
@@ -44,7 +44,7 @@ public class ServiceUsers
      * genera o eroare
      * @param id-Integer
      * @return Utilizatorul pe care l-am sters pe baza id-ului ce l-am primit ca si parametru
-     * @throws IllegalArgumentException-user ul nu a fost gasit
+     * @throws IllegalArgumentException -user ul nu a fost gasit
      */
     public User delete_user(int id) throws EntityIsNull, EntityNotFound {
         User user = this.users_repo.delete(id);

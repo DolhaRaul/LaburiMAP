@@ -18,7 +18,7 @@ public abstract class AbstractRepo<ID, E extends Entity<ID>> implements Reposito
     /**
      * constructor cu parametrii pentru clasa AbstarctRepository(desi nu il vom apela niciodata cu exceptia claselor
      * derivate, fiindca clasa aceasta este asbtracta)
-     * @param validator-Validator<E>
+     * @param validator-Validato
      */
     public AbstractRepo(Validator<E> validator)
     {
@@ -30,9 +30,9 @@ public abstract class AbstractRepo<ID, E extends Entity<ID>> implements Reposito
      * salvam si returnam entitatea
      * @param entity-E
      * @return entitatea de adaugat
-     * @throws IllegalArgumentException-nu e folosita
-     * @throws ValidatorException-im cazul in care entitatea de salvat nu e in format corect
-     * @throws EntityIsNull-entitatea e nula(nu are datele membre initializate cu ceva)
+     * @throws IllegalArgumentException -nu e folosita
+     * @throws ValidatorException -im cazul in care entitatea de salvat nu e in format corect
+     * @throws EntityIsNull -entitatea e nula(nu are datele membre initializate cu ceva)
      */
     @Override
     public E save(E entity) throws IllegalArgumentException, ValidatorException, EntityIsNull {
@@ -57,7 +57,7 @@ public abstract class AbstractRepo<ID, E extends Entity<ID>> implements Reposito
      * stergem o entitate de un Id dorit
      * @param id-ID
      * @return entitatea pe care am sters o
-     * @throws EntityIsNull-in cazul in care ID ul introdus e vid
+     * @throws EntityIsNull -in cazul in care ID ul introdus e vid
      */
     @Override
     public E delete(ID id) throws EntityIsNull

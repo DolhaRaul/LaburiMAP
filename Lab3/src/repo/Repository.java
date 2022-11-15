@@ -13,14 +13,17 @@ public interface Repository<ID, E>
     E save(E entity) throws IllegalArgumentException, ValidatorException, EntityIsNull;
 
     /**
+     * salvam entitatea
      * @param id-ID
      * @return entiatea pe care am sters o sau null daca entitatea de sters nu exista
+     * @throws EntityIsNull
      */
     E delete(ID id) throws EntityIsNull;
 
     /**
-     * @param id-ID
-     * @return entitatea de id dorit sau null in caz contrar
+     *
+     * @param id
+     * @return
      */
     E findOne(ID id);
 

@@ -6,7 +6,7 @@ public class PrietenieValidator implements Validator<Prietenie> {
     /**
      * validam o prietenie, ca sa fie in format corect
      * @param entity-Prietenie
-     * @throws ValidatorException-daca priteneia nu e valida(nu e corecta)
+     * @throws ValidatorException- daca priteneia nu e valida(nu e corecta)
      */
     @Override
     public void validate(Prietenie entity) throws ValidatorException

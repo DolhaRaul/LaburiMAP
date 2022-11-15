@@ -30,7 +30,7 @@ public class UserFileRepository extends AbstractRepo<Integer, User>
 
     /**
      * salvam datele din fisier in repo ul de useri
-     * @throws ValidatorException-cand fisierul este corupt(nu putem extrage datele corespunzator)
+     * @throws ValidatorException -cand fisierul este corupt(nu putem extrage datele corespunzator)
      */
     public void load() throws ValidatorException, EntityIsNull {
         try {

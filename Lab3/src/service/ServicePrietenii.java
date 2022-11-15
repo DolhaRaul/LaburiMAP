@@ -41,17 +41,22 @@ public class ServicePrietenii
         IN DEFINITIA FUNCTIEI(la fel si pentru functiile in care aceasta este folosita, nu se propaga fiindca ELE SUNT DE TIPUL
         UNCHECKED(pot aparea si fara sa fie mentionate), asa ca trebuie apelate explicit
          */
-        Prietenie friendship = new Prietenie(id, id_user1, id_user2);
-        this.prietenii_repo.save(friendship);
-        return friendship;
+        ///exista acesti useri intre care cream prietenia
+        if(users_repo.findOne(id_user1) != null && users_repo.findOne(id_user2) != null)
+        {
+            Prietenie friendship = new Prietenie(id, id_user1, id_user2);
+            this.prietenii_repo.save(friendship);
+            return friendship;
+        }
+        return null;///nu s-a putut adauga prietenia
     }
 
     /**
      * Stergem si returnam o prietenie de un id dorit(daca aceasta exista)
      * @param id-Integer
      * @return Prietenia stearsa pentru un id introdus
-     * @throws EntityIsNull-ID ul prieteniei de sters este vid(nu a fost introdus)
-     * @throws EntityNotFound-Prietenia de sters nu a fost gasita
+     * @throws EntityIsNull -ID ul prieteniei de sters este vid(nu a fost introdus)
+     * @throws EntityNotFound -Prietenia de sters nu a fost gasita
      */
 
     public Prietenie delete_prietenie(int id) throws EntityIsNull, EntityNotFound {

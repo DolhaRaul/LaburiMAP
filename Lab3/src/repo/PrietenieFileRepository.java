@@ -32,9 +32,9 @@ public class PrietenieFileRepository extends AbstractRepo<Integer, Prietenie>
      * prietenie deja existenta(se formeaza intre utilizatori diferiti)
      * @param relatie-Prietenie
      * @return prietenia adaugata
-     * @throws IllegalArgumentException-nu e cazul
-     * @throws ValidatorException-in cazul in care prietenia de adaugat nu e corecta ca si format
-     * @throws EntityIsNull-in cazul in care prietenia nu e vida(nu are parametrii completati)
+     * @throws IllegalArgumentException -nu e cazul
+     * @throws ValidatorException -in cazul in care prietenia de adaugat nu e corecta ca si format
+     * @throws EntityIsNull -in cazul in care prietenia nu e vida(nu are parametrii completati)
      */
     @Override
     public Prietenie save(Prietenie relatie) throws IllegalArgumentException, ValidatorException, EntityIsNull

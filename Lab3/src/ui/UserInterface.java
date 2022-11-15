@@ -108,8 +108,12 @@ public class UserInterface
             String oras = myobj.next();
             this.users.add_user(id, nume, prenume, oras);
         }
+
     /**
-    *Permitem utilizatorului sa stearga un user dorit
+     *Permitem utilizatorului sa stearga un user dorit
+     * @throws IllegalArgumentException -
+     * @throws EntityIsNull
+     * @throws EntityNotFound
      */
     public void delete_user() throws IllegalArgumentException, EntityIsNull, EntityNotFound {
             Scanner myObj = new Scanner(System.in);
