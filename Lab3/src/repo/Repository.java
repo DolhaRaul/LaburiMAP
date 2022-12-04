@@ -1,7 +1,10 @@
 package repo;
 
+import domain.User;
 import domain.validators.EntityIsNull;
 import domain.validators.ValidatorException;
+
+import java.util.Optional;
 
 public interface Repository<ID, E>
 {

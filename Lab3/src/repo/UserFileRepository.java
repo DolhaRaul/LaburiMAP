@@ -1,9 +1,7 @@
 package repo;
 
-import domain.Entity;
 import domain.User;
 import domain.validators.EntityIsNull;
-import domain.validators.UserValidator;
 import domain.validators.Validator;
 import domain.validators.ValidatorException;
 

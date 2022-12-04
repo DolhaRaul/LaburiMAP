@@ -84,6 +84,7 @@ public class UserInterface
             catch(Exception e)
             {
                 System.err.println("Eroare: " + e.getMessage());
+                e.printStackTrace();
             }
             finally{
                 menu();

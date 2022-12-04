@@ -2,6 +2,7 @@ package repo;
 
 import java.util.*;
 import domain.Entity;
+import domain.User;
 import domain.validators.EntityIsNull;
 import domain.validators.EntityNotFound;
 import domain.validators.Validator;
@@ -9,7 +10,7 @@ import domain.validators.ValidatorException;
 
 import java.util.HashMap;
 
-public abstract class AbstractRepo<ID, E extends Entity<ID>> implements Repository<ID, E>
+public  class AbstractRepo<ID, E extends Entity<ID>> implements Repository<ID, E>
 {
     protected Map<ID, E> items;///elementele repo ului
 

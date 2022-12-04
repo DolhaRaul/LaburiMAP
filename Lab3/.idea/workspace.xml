@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b7facb36-79ca-4eff-a180-ba9547383221" name="Changes" comment="" />
+    <list default="true" id="b7facb36-79ca-4eff-a180-ba9547383221" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/repo/UtilizatorDBRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LaburiMAP.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Lab2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/repo/AbstractRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/repo/AbstractRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/repo/Repository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/repo/Repository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/repo/UserFileRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/repo/UserFileRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/run/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/run/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/ServiceUsers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/ServiceUsers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/UserInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/UserInterface.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -27,15 +39,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/rauld/Downloads/postgresql-42.5.1.jar",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
+    ]
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="run.Main" />
@@ -60,7 +81,16 @@
       <workItem from="1668445005642" duration="9524000" />
       <workItem from="1668456274539" duration="1423000" />
       <workItem from="1668519119940" duration="618000" />
-      <workItem from="1668528510966" duration="7117000" />
+      <workItem from="1668528510966" duration="7256000" />
+      <workItem from="1668535847559" duration="23000" />
+      <workItem from="1668608155142" duration="3459000" />
+      <workItem from="1668695522675" duration="389000" />
+      <workItem from="1668695959159" duration="346000" />
+      <workItem from="1668696345654" duration="2134000" />
+      <workItem from="1668702959063" duration="640000" />
+      <workItem from="1669992582574" duration="2602000" />
+      <workItem from="1670000634166" duration="3899000" />
+      <workItem from="1670019620807" duration="1398000" />
     </task>
     <servers />
   </component>
@@ -106,6 +136,11 @@
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/run/Main.java</url>
+          <line>47</line>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

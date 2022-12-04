@@ -8,6 +8,10 @@ import domain.validators.ValidatorException;
 import repo.PrietenieFileRepository;
 import repo.UserFileRepository;
 
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
 public class ServiceUsers
 {
     private UserFileRepository users_repo;
@@ -46,10 +50,21 @@ public class ServiceUsers
      * @return Utilizatorul pe care l-am sters pe baza id-ului ce l-am primit ca si parametru
      * @throws IllegalArgumentException -user ul nu a fost gasit
      */
-    public User delete_user(int id) throws EntityIsNull, EntityNotFound {
-        User user = this.users_repo.delete(id);
+    public User delete_user(int id) throws EntityIsNull, EntityNotFound
+    {
+        User user = this.users_repo.delete(id);///utilizatorul de sters
         if(user == null)
             throw new EntityNotFound("Utilizatorul de sters nu a fost gasit!");
+
+        Iterable<Prietenie> relatii = friends_repo.findAll();
+        HashMap<Integer, Prietenie> prietenii_de_sters = new HashMap<>();
+        for(Prietenie relatie: relatii)///vedem toate relatiile de prietenie
+        {
+            if (relatie.getId_user2() == user.getID() || relatie.getId_user1() == user.getID())
+              prietenii_de_sters.put(relatie.getID(), relatie);
+        }
+        for(Integer cheie: prietenii_de_sters.keySet())
+            friends_repo.delete(cheie);
         return user;
     }
 
