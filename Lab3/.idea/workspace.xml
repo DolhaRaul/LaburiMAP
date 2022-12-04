@@ -2,17 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b7facb36-79ca-4eff-a180-ba9547383221" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/repo/UtilizatorDBRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LaburiMAP.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/run/Tests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6446ea40-82fa-45e4-be8e-99c7824b07ef.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/6446ea40-82fa-45e4-be8e-99c7824b07ef.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6446ea40-82fa-45e4-be8e-99c7824b07ef/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/6446ea40-82fa-45e4-be8e-99c7824b07ef/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Lab2.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/repo/AbstractRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/repo/AbstractRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/run/TestRunner.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/run/TestRunner.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/repo/Repository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/repo/Repository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/repo/UserFileRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/repo/UserFileRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/repo/UtilizatorDBRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/repo/UtilizatorDBRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/run/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/run/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/service/ServiceUsers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/ServiceUsers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/UserInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/UserInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/run/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/run/TestRunner.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,26 +37,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/rauld/Downloads/postgresql-42.5.1.jar",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/rauld/Downloads/postgresql-42.5.1.jar&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
     ]
   }
-}]]></component>
-  <component name="RunManager">
-    <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
+}</component>
+  <component name="RunManager" selected="Application.Tests">
+    <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="run.Main" />
       <module name="Lab2" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -66,6 +64,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Tests" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="run.TestRunner" />
+      <module name="Lab2" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Tests" />
+      <item itemvalue="Application.Main" />
+    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -91,6 +101,7 @@
       <workItem from="1669992582574" duration="2602000" />
       <workItem from="1670000634166" duration="3899000" />
       <workItem from="1670019620807" duration="1398000" />
+      <workItem from="1670176670737" duration="12832000" />
     </task>
     <servers />
   </component>
@@ -128,21 +139,32 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
+        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/run/TestRunner.java</url>
-          <line>60</line>
-          <properties class="run.TestRunner" method="test_service_prietenii">
+          <line>21</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/run/Tests.java</url>
+          <line>109</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/repo/UtilizatorDBRepository.java</url>
+          <line>84</line>
+          <properties class="repo.UtilizatorDBRepository" method="delete">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/run/Main.java</url>
-          <line>47</line>
-          <option name="timeStamp" value="2" />
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="repoDB" />
+        <watch expression="usable_users" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

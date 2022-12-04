@@ -4,6 +4,7 @@ import domain.User;
 import domain.validators.EntityIsNull;
 import domain.validators.ValidatorException;
 
+import java.sql.SQLException;
 import java.util.Optional;
 
 public interface Repository<ID, E>
@@ -21,7 +22,7 @@ public interface Repository<ID, E>
      * @return entiatea pe care am sters o sau null daca entitatea de sters nu exista
      * @throws EntityIsNull
      */
-    E delete(ID id) throws EntityIsNull;
+    E delete(ID id) throws EntityIsNull, SQLException;
 
     /**
      *
